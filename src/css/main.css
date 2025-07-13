@@ -1,0 +1,13 @@
+@import "../fonts/bebasneue/bebasneue.css";
+@import "../fonts/roboto/roboto.css";
+
+@import "base/reset.css";
+@import "base/base.css";
+
+@import "blocks/header.css";
+@import "blocks/sct-trainers.css";
+@import "blocks/button.css";
+@import "blocks/beast-section.css";
+@import "blocks/programs.css";
+@import "blocks/section-contact.css";
+@import "blocks/footer-socials.css";

@@ -1,0 +1,111 @@
+.section-trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px 30px
+}
+
+.section-trainers {
+    padding: 150px 0;
+}
+
+.section-header-info {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.trainers-title {
+    font-size: clamp(2.25rem, 0.886rem + 6.82vw, 6rem);
+    color: var(--accent);
+    font-family: var(--font-accent);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.trainers-text {
+    font-size: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);
+    line-height: 200%;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 800px;
+}
+
+.card-trainer {
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+.card-trainer::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+    transition: opacity 0.2s ease-in-out;
+}
+
+.card-trainer-name {
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(0.875rem, 0.239rem + 3.18vw, 2.625rem);
+    font-family: var(--font-accent);
+    font-weight: bold;
+    text-align: center;
+    transition: all  0.2s ease-in;
+}
+
+.card-trainer:hover .card-trainer-name{
+    top: 50%;
+    opacity: 1;
+}
+.card-trainer:hover::before {
+    opacity: 1;
+}
+  .card-trainer-img {
+      width: 100%;
+}
+
+
+
+@media (hover: none) and (pointer: coarse) {
+    .card-trainer-name {
+        opacity: 1;
+        top: 50%;
+    }
+
+    .card-trainer::before {
+        opacity: 1;
+    }
+}
+@media (max-width: 1000px) {
+    .section-trainers-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-trainers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-trainer {
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .section-trainers-grid {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+}

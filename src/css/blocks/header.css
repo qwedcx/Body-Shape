@@ -1,0 +1,90 @@
+.header{
+    padding-top: 30px;
+    height: 750px;
+    background:
+            image-set(
+                    url("../../img/hero/hero-bg.jpg") 1x,
+                    url("../../img/hero/hero-bg@2x.jpg") 2x)
+            left top/ cover no-repeat;
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.19em;
+}
+
+.header-img {
+    padding-top: 125px;
+    text-align: right;
+}
+
+.header-logo {
+    display: block;
+}
+
+.header-nav a {
+    transition: color 0.2s ease-in;
+}
+
+.header-nav a:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 1000px) {
+    .header-img {
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .header-logo {
+        display: none;
+    }
+
+    .header-row {
+        justify-content: center;
+    }
+
+    .header {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        background-size: cover;
+        background-position: -90px center;
+        background-repeat: no-repeat;
+        height: auto;
+        padding-bottom: 70px;
+    }
+    .header-logo {
+        display: block;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .header-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        row-gap: 60px;
+        font-size: 20px;
+    }
+}

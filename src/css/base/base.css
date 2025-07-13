@@ -1,0 +1,23 @@
+:root {
+    --accent: #FFD479;
+
+    --font-base: "Roboto", sans-serif;
+    --font-accent: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background-color: #1F2A32;
+    font-family: var(--font-base);
+    color: #FAFAF5;
+    font-weight: 300;
+}
+a {
+    color: #FAFAF5;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    width: 100%;
+}

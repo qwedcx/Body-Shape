@@ -1,0 +1,44 @@
+.btn-beast-container {
+}
+
+.btn-beast {
+    background-color: var(--accent);
+    border-radius: 7px;
+    height: 52px;
+    font-family: var(--font-accent);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.26em;
+    padding: 18px 47px 15px;
+    color: #000000;
+
+}
+
+.btn-beast:hover, .btn-beast:active {
+    background: #fcc54e;
+}
+
+@media (max-width: 400px) {
+
+    .btn-beast-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-beast {
+        letter-spacing: 0.14em;
+        padding: 15px 40px 12px;
+
+    }
+}
+
+.contact-btn {
+}
+
+.contact-btn .btn-send {
+
+}
+
+.btn-beast {
+}
