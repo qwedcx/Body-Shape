@@ -1,3 +1,5 @@
+https://qwedcx.github.io/Body-Shape/
+
 BodyShape - Adaptive Landing Page
 This project is an adaptive landing page layout inspired by a YouTube course.
 I initially coded about half the layout together with the instructor, then after a few days started over and completed the project independently.
